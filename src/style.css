@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0; 
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #eceffc;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.input {  
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+}
+
+.input > label {
+  margin-bottom: 4px;
+}
+
+.btn {
+  padding: 8px 20px;
+  /* border-radius: 0px; */
+  overflow: hidden;
+
+  /* TODO: FINISH BUTTON CSS */
+}
+
+
+
+

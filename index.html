@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário CEP</title>
+  </head>
+  <body>
+    <div>
+      <form action="" class="formulario">
+        <div class="input">
+          <h3>Cadastro de Endereço</h3>
+        </div>
+        <div class="input">
+          <label for="cep">CEP: </label>
+          <input type="text" id="cep" class="cep" />
+        </div>
+
+        <div class="input">
+          <label for="logradouro">Logradouro: </label>
+          <input type="text" id="logradouro" class="logradouro" />
+        </div>
+
+        <div class="input">
+          <label for="numero">Número: </label>
+          <input type="text" id="numero" class="numero" />
+        </div>
+
+        <div class="input">
+          <label for="bairro">Bairro: </label>
+          <input type="text" id="bairro" class="bairro" />
+        </div>
+
+       <div class="input">
+         <label for="estado">Estado: </label>
+          <select id="estado" class="estado">
+            <option value="">Selecione um estado: </option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+          </select>
+       </div>
+
+       <div class="input">
+          <label for="cidade">Cidade: </label>
+          <select id="cidade">
+            <option value="">Selecione uma cidade: </option>
+          </select>
+       </div>
+
+       <div class="input">
+          <button class="btn">Cadastrar</button>
+       </div>
+      </form>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
