@@ -29,8 +29,6 @@ cep.addEventListener('blur', async() => {
 estado.addEventListener('blur', async() => {
   const uf = estado.value;
 
-  // cidade.innerHTML = "<option value = ''>Aguardando estado...</option>";
-
   if(uf) {
     const response = await fetch(`https://brasilapi.com.br/api/ibge/municipios/v1/${uf}`)
     const cidades = await response.json();
