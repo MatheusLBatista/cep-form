@@ -7,13 +7,6 @@ const cidade = document.querySelector<HTMLSelectElement>('#cidade')!
 const estado = document.querySelector<HTMLSelectElement>('#estado')!
 const numero = document.querySelector<HTMLInputElement>('#numero')!
 
-const estadosBrasil:String[] = [
-    "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO",
-    "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI",
-    "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO"
-  ];
-
-
 cep.addEventListener('blur', async() => {
   const response = await fetch(`https://brasilapi.com.br/api/cep/v1/${cep.value}`);
   const data = await response.json();
